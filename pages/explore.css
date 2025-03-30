@@ -1,0 +1,125 @@
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+.nft-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-top: 100px;
+  }
+
+.nft-item {
+    background-color: var(--background-letters);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px var(--text-color-black);
+  }
+  
+  .nft-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .nft-item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--text-color-white);
+  }
+  
+  /* Adicionando o estilo de truncamento de texto com compatibilidade */
+  .nft-description {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;  /* Limita o texto a 2 linhas para Webkit */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    line-clamp: 2;  /* Propriedade padrão, compatível com navegadores modernos */
+  }
+  
+  #price {
+    font-weight: 700;
+    color: var(--text-color-white);
+  }
+  
+  /* .eth - container para alinhar a imagem e o texto */
+  .eth {
+    display: flex;             /* Usando flexbox para alinhar o conteúdo lado a lado */
+    align-items: center;       /* Alinha verticalmente a imagem e o texto no centro */
+    justify-content: flex-start; /* Alinha o conteúdo à esquerda (padrão) */
+  }
+  
+  /* .eth-image - estilizacao da imagem dentro da classe eth */
+  div .eth-image {
+    width: 25px;     /* Ajusta o tamanho da imagem */
+    height: auto;    /* Mantém a proporção da imagem */
+    margin-right: 0.3rem; /* Ajusta o espaçamento à direita da imagem */
+  }
+  
+  .nft-item p {
+    font-size: 14px;
+    color: var(--text-color-gray);
+  }
+ 
+/* Alinha a barra com o botão */
+.progress-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 100px;
+}
+
+/* Barra de progresso do tamanho do botão */
+.progress-container {
+  width: 280px;
+  height: 8px;  
+  background-color: var(--background-cards);
+  color: var(--text-color-white);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: var(--background-orange);
+  transition: width 0.3s ease-in-out;
+}
+
+
+/* Botão "Carregar mais" */
+.load-more-btn {
+  width: 280px;
+  padding: 20px 0;
+  background-color: var(--background-cards);
+  color: var(--text-color-white);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-align: center;
+}
+
+.load-more-btn:hover {
+  background-color: var(--background-cards-hover);
+}
+
+.load-more-btn:disabled {
+  background-color: var(--background-cards);
+  cursor: not-allowed;
+  text-decoration: none;
+}
+  
+  

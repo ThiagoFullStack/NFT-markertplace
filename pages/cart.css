@@ -1,0 +1,252 @@
+
+/* Container do Carrinho */
+.cart-container {
+    display: flex;
+    align-items: center;
+    color: var(--text-color-white);
+    cursor: pointer;
+    position: relative;
+  }
+  
+  /* Ícone do Carrinho */
+  .cart-icon {
+    color: var(--text-color-orange); 
+  }
+  
+  /* Contador do Carrinho */
+  .cart-count {
+    margin-left: 4px;
+    font-size: 0.875rem; 
+    font-weight: 600;
+    color: var(--text-color-white);
+  }
+  
+  /* Estilos gerais do carrinho */
+  .cart-container-carrinho {
+    padding: 1.5rem;
+    background-color: var(--background-color);
+    min-height: 100vh;
+    color: var(--text-color-white);
+  }
+  
+  .cart-title {
+    font-size: 2.7rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .cart-empty {
+    text-align: center;
+    color: var(--text-color-gray); 
+  }
+  
+  .cart-empty p{
+    text-align: center;
+    margin-top: -110px;
+    color: var(--text-color-gray); 
+  }
+  
+  /* Estilos do botão de seta */
+  .back-button {
+    background-color: var(--background-cards);
+    color: var(--text-color-orange);
+    border-radius: 50%; /* Tornar o botão circular */
+    padding: 25px; /* Tamanho do botão */
+    border: none; /* Remover borda */
+    cursor: pointer; /* Indicar que é clicável */
+    display: flex;
+    justify-content: center; /* Centralizar o ícone dentro do botão */
+    align-items: center; /* Centralizar o ícone dentro do botão */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+    font-size: 2rem; /* Tamanho do ícone */
+  }
+  
+  /* Container do cabeçalho do carrinho */
+  .cart-header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo no eixo horizontal */
+    gap: 255px; /* Espaço entre o botão e o título */
+    margin-top: 100px; /* Espaço abaixo do cabeçalho */
+    margin-bottom: 150px; /* Espaço abaixo do cabeçalho */
+    margin-right: 330px; /* Espaçamento à direita do botão */
+  }
+  
+  /* Estilização dos itens do carrinho */
+  .cart-items {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .cart-item {
+    background-color: var(--background-cards);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 6px var(--text-color-black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  
+  .cart-item-image {
+    border-radius: 0.5rem;
+  }
+  
+  /* Informações do NFT */
+  .cart-item-info {
+    flex-grow: 1;
+  }
+  
+  .cart-item-title {
+    font-size: 1.25rem;
+    font-weight: 400;
+  }
+  
+  .cart-item-description {
+    color: var(--text-color-gray); 
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;  /* Limita o texto a 2 linhas para Webkit */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    line-clamp: 2;  /* Propriedade padrão, compatível com navegadores modernos */
+  }
+  
+  .cart-item-logo {
+    margin-top: 0.5rem;
+  }
+  
+  .cart-item-price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--text-color-white);
+    margin-top: 12px;
+  }
+  
+  .cart-item-price-container {
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente */
+    gap: 8px; /* Adiciona um espaçamento entre a imagem e o preço */
+  }
+  
+  
+  /* Contador e botão de exclusão */
+  .cart-item-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribui os elementos */
+    gap: 15px; /* Ajuste o espaçamento entre o contador e o botão de deletar */
+    margin-top: 15px;
+  }
+  
+  .cart-remove {
+    
+    background-color: var( --background-orange-hover);
+    color: var(--text-color-white);
+    border-radius: 50%; /* Tornar o botão circular */
+    padding: 15px; /* Aumentar o tamanho do botão */
+    border: none; /* Remover borda */
+    cursor: pointer; /* Indicar que é clicável */
+    display: flex;
+    justify-content: center; /* Centralizar o ícone */
+    align-items: center; /* Centralizar o ícone */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-size: 1.3rem; /* Aumentar o tamanho do ícone */
+  }
+  
+  .cart-remove:hover {
+    background-color: var(--background-orange);
+    transform: scale(1.1);
+  }
+  
+  .cart-item-text {
+    display: flex;
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    gap: 0.5rem; /* Espaçamento entre os elementos */
+  }
+  
+  .cart-quantity-container {
+    margin-top: 0.5rem; /* Adiciona um espaçamento acima do contador */
+  }
+  
+  
+  .cart-quantity {
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+    background-color: var(--background-color);
+    padding: 0.5rem 0rem;
+    border-radius: 0.5rem;
+  }
+  
+  .cart-quantity button {
+    background: none; /* Remove o fundo */
+    border: none; /* Remove a borda */
+    color: var(--text-color-gray); 
+    font-size: 0.9rem; /* Tamanho do ícone */
+    cursor: pointer; /* Adiciona o cursor de "mão" para indicar que é clicável */
+    transition: color 0.2s; /* Transição suave para a cor */
+    padding: 10px; /* Adiciona espaçamento interno ao redor do ícone */
+  }
+  
+  .cart-quantity button:hover {
+    color: var(--text-color-white);
+  } 
+  
+  /* Total e imagem à direita */
+  .cart-total-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  .cart-total-text {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .cart-total-right {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .cart-total-logo {
+    border-radius: 0.5rem;
+  }
+  
+  .cart-total-price {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-color-white);
+  }
+  
+  /* Botão Finalizar Compra */
+  .cart-checkout {
+    width: 100%;
+    background-color: var(--background-orange);
+    color: var(--text-color-white);
+    border: 0;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.125rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s;
+  }
+  
+  .cart-checkout:hover {
+    background-color: var(--background-orange);
+  }
+  

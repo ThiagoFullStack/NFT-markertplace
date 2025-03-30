@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import "../src/components/ui/navbar.css"; /* Primeiro importa o arquivo navbar.css */
+@import "../pages/explore.css"; /* Depois importa explore.css */
+@import '../pages/cart.css';
+@import '../pages/success.css';
+@import '../pages/error.css';
+@import '../src/components/ui/NFTCard.module.css';
+
+
+
+:root {
+  --background-orange: #FF8310;
+  --background-orange-hover: #f78b26;
+  --background-color: #232323;
+  --background-letters: #191A20;
+  --background-cards: #393939; 
+  --background-cards-hover: #373737;
+  --text-color-black: #191A20;
+  --text-color-gray: #CCCCCC;
+  --text-color-white: #FFFFFF;
+  --text-color-orange: #FF8310;
+}
+
+
+body {
+  font-family: Arial, sans-serif, Poppins;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+}
+
+h1 {
+  text-align: center;
+  color: var(--text-color-white);
+}
+
+/* Estilo para a tela de carregamento */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 9999;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Aqui você pode adicionar mais estilos como spinner */
+
+
+/* globals.css */
+.card {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.price {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.btn {
+  background-color: #FF8310;
+  color: var(--text-color-white); 
+  text-decoration: none;
+  padding: 8% 34%;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  margin-top: 8px;
+  cursor: pointer; 
+  transition: background-color 0.5s ease, border 0.5s ease; 
+}
+
+
+.btn:hover {
+  background-color: var(--background-orange-hover);
+}
+
+.cardButton {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.cardButton:hover {
+  background-color: #2980b9;
+}
+
+
+
+/* FOOTER */
+.footer {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  color: var(--text-color-gray);
+  margin-top: 40px;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+/* src/components/ui/StyledButton.module.css */
+
+.button {
+  background-color: var(--background-orange);
+  color: var(--text-color-white); 
+  padding: 8% 34%;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  margin-top: 8px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, border 0.5s ease;
+  }
+  
+  .button:hover {
+    background-color: var(--background-orange-hover);
+  }
+  

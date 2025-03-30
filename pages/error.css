@@ -1,0 +1,23 @@
+/* error.css */
+.error-page {
+    text-align: center;
+    padding: 50px;
+    background-color: #fff0f0;
+  }
+  
+  .error-page h1 {
+    color: #dc3545;
+  }
+  
+  .error-page button {
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .error-page button:hover {
+    background-color: #c82333;
+  }
+  
