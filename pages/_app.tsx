@@ -1,10 +1,10 @@
 
-import { AnimatePresence, motion } from "framer-motion"; // Certifique-se de importar o AnimatePresence corretamente
+import { AnimatePresence, motion } from "framer-motion"; 
 import { AppProps } from "next/app";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Provider } from "react-redux";
-import store from "../src/store"; // A importação deve estar correta agora
-import { CartProvider } from "../src/providers/CartContext"; // Certifique-se de que o caminho do CartContext está correto
+import store from "../src/store"; 
+import { CartProvider } from "../src/providers/CartContext"; 
 import "../styles/globals.scss";
 
 const queryClient = new QueryClient();

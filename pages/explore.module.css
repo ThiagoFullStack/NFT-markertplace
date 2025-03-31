@@ -37,12 +37,12 @@
   /* Adicionando o estilo de truncamento de texto com compatibilidade */
   .nft-description {
     display: -webkit-box;
-    -webkit-line-clamp: 4;  /* Limita o texto a 2 linhas para Webkit */
+    -webkit-line-clamp: 4;  
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
     
-    line-clamp: 2;  /* Propriedade padrão, compatível com navegadores modernos */
+    line-clamp: 2;  
   }
   
   #price {
@@ -52,16 +52,16 @@
   
   /* .eth - container para alinhar a imagem e o texto */
   .eth {
-    display: flex;             /* Usando flexbox para alinhar o conteúdo lado a lado */
-    align-items: center;       /* Alinha verticalmente a imagem e o texto no centro */
-    justify-content: flex-start; /* Alinha o conteúdo à esquerda (padrão) */
+    display: flex;            
+    align-items: center;       
+    justify-content: flex-start; 
   }
   
   /* .eth-image - estilizacao da imagem dentro da classe eth */
   div .eth-image {
-    width: 25px;     /* Ajusta o tamanho da imagem */
-    height: auto;    /* Mantém a proporção da imagem */
-    margin-right: 0.3rem; /* Ajusta o espaçamento à direita da imagem */
+    width: 25px;     
+    height: auto;    
+    margin-right: 0.3rem; 
   }
   
   .nft-item p {

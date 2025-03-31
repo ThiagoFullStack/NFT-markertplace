@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 
-@import "../src/components/ui/navbar.css"; /* Primeiro importa o arquivo navbar.css */
-@import "../pages/explore.css"; /* Depois importa explore.css */
-@import '../pages/cart.css';
-@import '../pages/success.css';
-@import '../pages/error.css';
+@import "../src/components/ui/navbar.module.css"; 
+@import "../pages/explore.module.css"; 
+@import '../pages/cart.module.css';
+@import '../pages/success.module.css';
+@import '../pages/error.module.css';
 @import '../src/components/ui/NFTCard.module.css';
 
 
@@ -53,9 +53,6 @@ h1 {
   font-size: 1.5rem;
   color: #333;
 }
-
-/* Aqui você pode adicionar mais estilos como spinner */
-
 
 /* globals.css */
 .card {
@@ -103,7 +100,6 @@ h1 {
 .cardButton:hover {
   background-color: #2980b9;
 }
-
 
 
 /* FOOTER */

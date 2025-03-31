@@ -51,26 +51,26 @@
   .back-button {
     background-color: var(--background-cards);
     color: var(--text-color-orange);
-    border-radius: 50%; /* Tornar o botão circular */
-    padding: 25px; /* Tamanho do botão */
-    border: none; /* Remover borda */
-    cursor: pointer; /* Indicar que é clicável */
+    border-radius: 50%; 
+    padding: 25px; 
+    border: none; 
+    cursor: pointer; 
     display: flex;
-    justify-content: center; /* Centralizar o ícone dentro do botão */
-    align-items: center; /* Centralizar o ícone dentro do botão */
-    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
-    font-size: 2rem; /* Tamanho do ícone */
+    justify-content: center; 
+    align-items: center; 
+    transition: background-color 0.3s; 
+    font-size: 2rem; 
   }
   
   /* Container do cabeçalho do carrinho */
   .cart-header {
     display: flex;
     align-items: center;
-    justify-content: center; /* Centraliza o conteúdo no eixo horizontal */
-    gap: 255px; /* Espaço entre o botão e o título */
-    margin-top: 100px; /* Espaço abaixo do cabeçalho */
-    margin-bottom: 150px; /* Espaço abaixo do cabeçalho */
-    margin-right: 330px; /* Espaçamento à direita do botão */
+    justify-content: center; 
+    gap: 255px; 
+    margin-top: 100px; 
+    margin-bottom: 150px; 
+    margin-right: 330px; 
   }
   
   /* Estilização dos itens do carrinho */
@@ -112,12 +112,12 @@
     font-size: 0.875rem;
     margin-bottom: 0.5rem;
     display: -webkit-box;
-    -webkit-line-clamp: 1;  /* Limita o texto a 2 linhas para Webkit */
+    -webkit-line-clamp: 1; 
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
     
-    line-clamp: 2;  /* Propriedade padrão, compatível com navegadores modernos */
+    line-clamp: 2;  
   }
   
   .cart-item-logo {
@@ -133,17 +133,16 @@
   
   .cart-item-price-container {
     display: flex;
-    align-items: center; /* Alinha os itens verticalmente */
-    gap: 8px; /* Adiciona um espaçamento entre a imagem e o preço */
+    align-items: center; 
+    gap: 8px; 
   }
-  
   
   /* Contador e botão de exclusão */
   .cart-item-actions {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Distribui os elementos */
-    gap: 15px; /* Ajuste o espaçamento entre o contador e o botão de deletar */
+    justify-content: space-between; 
+    gap: 15px; 
     margin-top: 15px;
   }
   
@@ -151,16 +150,16 @@
     
     background-color: var( --background-orange-hover);
     color: var(--text-color-white);
-    border-radius: 50%; /* Tornar o botão circular */
-    padding: 15px; /* Aumentar o tamanho do botão */
-    border: none; /* Remover borda */
-    cursor: pointer; /* Indicar que é clicável */
+    border-radius: 50%; 
+    padding: 15px; 
+    border: none; 
+    cursor: pointer; 
     display: flex;
-    justify-content: center; /* Centralizar o ícone */
-    align-items: center; /* Centralizar o ícone */
-    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+    justify-content: center; 
+    align-items: center; 
+    transition: background-color 0.3s; 
     transition: transform 0.3s ease, background-color 0.3s ease;
-    font-size: 1.3rem; /* Aumentar o tamanho do ícone */
+    font-size: 1.3rem; 
   }
   
   .cart-remove:hover {
@@ -170,12 +169,12 @@
   
   .cart-item-text {
     display: flex;
-    flex-direction: column; /* Empilha os elementos verticalmente */
-    gap: 0.5rem; /* Espaçamento entre os elementos */
+    flex-direction: column; 
+    gap: 0.5rem; 
   }
   
   .cart-quantity-container {
-    margin-top: 0.5rem; /* Adiciona um espaçamento acima do contador */
+    margin-top: 0.5rem; 
   }
   
   
@@ -189,13 +188,13 @@
   }
   
   .cart-quantity button {
-    background: none; /* Remove o fundo */
-    border: none; /* Remove a borda */
+    background: none; 
+    border: none; 
     color: var(--text-color-gray); 
-    font-size: 0.9rem; /* Tamanho do ícone */
-    cursor: pointer; /* Adiciona o cursor de "mão" para indicar que é clicável */
-    transition: color 0.2s; /* Transição suave para a cor */
-    padding: 10px; /* Adiciona espaçamento interno ao redor do ícone */
+    font-size: 0.9rem; 
+    cursor: pointer; 
+    transition: color 0.2s; 
+    padding: 10px; 
   }
   
   .cart-quantity button:hover {
