@@ -1,6 +1,10 @@
 
 💻 Marketplace NFT
 
+
+![Welcome](./public/NFT.png?raw=true)
+
+
 📜 Descrição do Projeto
 
 O Marketplace NFT é uma plataforma para exploração, compra e venda de NFTs (Tokens Não Fungíveis). O objetivo do projeto é permitir que os usuários naveguem entre os NFTs disponíveis, adicionem itens ao carrinho e finalizem a compra.
